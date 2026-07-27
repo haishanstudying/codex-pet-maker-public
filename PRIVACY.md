@@ -16,9 +16,9 @@ Depending on the task, a run may process:
 - validation results and visual-review notes; and
 - the final Codex pet package.
 
-The repository includes three checksum-pinned `Shape Scout` images from an
-isolated synthetic geometry test. It contains no user-provided reference image
-or private pet asset.
+The repository includes one generated synthetic brand logo and three
+checksum-pinned `Shape Scout` images from an isolated synthetic geometry test.
+It contains no user-provided reference image or private pet asset.
 
 ## Where data goes
 
@@ -51,7 +51,7 @@ sensitive material.
 - Never reuse another run, user asset, generated pet, or prompt as an example.
 - Never place user run assets or logs in the Plugin source.
 - Use synthetic geometry for automated tests.
-- Permit public demo images only by explicit path and SHA-256 allowlist.
+- Permit public synthetic images only by explicit path and SHA-256 allowlist.
 - Scan release candidates for other media, unexpected binary files, private
   identifiers, generated directories, and absolute user paths.
 

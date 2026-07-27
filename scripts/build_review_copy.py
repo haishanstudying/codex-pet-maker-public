@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.dont_write_bytecode = True
 
-from demo_assets import APPROVED_DEMO_IMAGES, approved_demo_image
+from demo_assets import APPROVED_PUBLIC_IMAGES, approved_public_image
 
 
 ALLOWED_SUFFIXES = {".json", ".md", ".py", ".txt", ".yaml", ".yml"}
@@ -35,7 +35,7 @@ def main() -> None:
         if any(part in SKIP_PARTS for part in relative.parts) or not path.is_file():
             continue
         if path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".tif", ".tiff"}:
-            if relative.as_posix() not in APPROVED_DEMO_IMAGES or not approved_demo_image(path, relative):
+            if relative.as_posix() not in APPROVED_PUBLIC_IMAGES or not approved_public_image(path, relative):
                 raise SystemExit(f"refusing unapproved image: {relative}")
         elif path.suffix.lower() not in ALLOWED_SUFFIXES and path.name not in ALLOWED_NAMES:
             raise SystemExit(f"refusing non-allowlisted file: {relative}")

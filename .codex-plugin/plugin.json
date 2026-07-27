@@ -1,7 +1,7 @@
 {
   "name": "codex-pet-maker",
   "version": "0.1.0-rc.1",
-  "description": "Create, validate, and install Codex v2 pets from user-provided references with resumable low-context orchestration.",
+  "description": "Turn one image or text description into a validated, install-ready animated Codex v2 pet.",
   "author": {
     "name": "haishanstudying",
     "url": "https://github.com/haishanstudying"
@@ -18,8 +18,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Codex Pet Maker",
-    "shortDescription": "Create validated Codex pets from your references.",
-    "longDescription": "Create Codex v2 pets with a compact persistent controller, deterministic atlas processing, bounded retries, and privacy-first local run isolation.",
+    "shortDescription": "Turn one image into an install-ready Codex pet.",
+    "longDescription": "Create Codex v2 pets from an image or text with resumable generation, targeted retries, deterministic atlas validation, and privacy-first local run isolation.",
     "developerName": "haishanstudying",
     "category": "Productivity",
     "capabilities": [

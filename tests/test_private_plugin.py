@@ -213,7 +213,7 @@ class PrivatePluginTests(unittest.TestCase):
             )
             self.assertEqual(
                 report["issues"][0]["reason"],
-                "approved demo image hash mismatch",
+                "approved public image hash mismatch",
             )
 
     def test_skill_budget(self) -> None:

@@ -4,6 +4,17 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+### Added
+
+- Portal-ready OpenAI Plugin Directory listing copy, release notes, and five
+  positive plus three negative review cases.
+- Public Terms of Use and support policy.
+- An original synthetic brand logo fixed by the release image allowlist.
+
+### Changed
+
+- Refined install-surface descriptions around the one-image workflow.
+
 ## [0.1.0-rc.1] - 2026-07-28
 
 ### Added

@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.dont_write_bytecode = True
 
-from demo_assets import APPROVED_DEMO_IMAGES, approved_demo_image
+from demo_assets import APPROVED_PUBLIC_IMAGES, approved_public_image
 
 
 BINARY_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".tif", ".tiff"}
@@ -32,10 +32,10 @@ def scan(root: Path, deny_tokens: list[str]) -> dict:
         if not path.is_file():
             continue
         if path.suffix.lower() in BINARY_EXTENSIONS:
-            if relative.as_posix() not in APPROVED_DEMO_IMAGES:
+            if relative.as_posix() not in APPROVED_PUBLIC_IMAGES:
                 issues.append({"file": str(relative), "reason": "binary image is not allowed"})
-            elif not approved_demo_image(path, relative):
-                issues.append({"file": str(relative), "reason": "approved demo image hash mismatch"})
+            elif not approved_public_image(path, relative):
+                issues.append({"file": str(relative), "reason": "approved public image hash mismatch"})
             continue
         try:
             text = path.read_text(encoding="utf-8")

@@ -1,5 +1,9 @@
 # Codex Pet Maker
 
+<p align="center">
+  <img src="assets/brand/codex-pet-maker-logo.png" width="260" alt="Codex Pet Maker logo">
+</p>
+
 > ## One image. Your own Codex pet.
 >
 > Turn a single reference image into a validated, install-ready animated
@@ -146,9 +150,9 @@ stage that failed.
 
 ## Privacy
 
-The repository contains only the three checksum-pinned synthetic `Shape Scout`
-demo images shown above. It contains no user reference images, private pets,
-prompts, run logs, or telemetry.
+The repository contains only one synthetic brand logo and the three
+checksum-pinned synthetic `Shape Scout` demo images shown above. It contains no
+user reference images, private pets, prompts, run logs, or telemetry.
 
 Runtime references and generated files stay in a separate run directory. When
 image generation is requested, only references attached to the current run are
@@ -157,10 +161,17 @@ processed by the configured image-generation service. See
 
 ## Support
 
+- Read [SUPPORT.md](SUPPORT.md) or open a
+  [GitHub Issue](https://github.com/haishanstudying/codex-pet-maker-public/issues).
 - Review [SECURITY.md](SECURITY.md) before reporting a vulnerability.
 - Check [CHANGELOG.md](CHANGELOG.md) for version notes.
 - For installation problems, confirm the Marketplace appears in
   `codex plugin marketplace list`, restart Codex, and test in a new task.
+
+## OpenAI Plugin Directory submission
+
+Portal-ready listing copy, release notes, and the required five positive and
+three negative review cases are available in [submission](submission/).
 
 ## License
 
