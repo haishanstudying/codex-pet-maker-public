@@ -1,0 +1,21 @@
+{
+  "name": "codex-pet-maker",
+  "interface": {
+    "displayName": "Codex Pet Maker"
+  },
+  "plugins": [
+    {
+      "name": "codex-pet-maker",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/haishanstudying/codex-pet-maker-public.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

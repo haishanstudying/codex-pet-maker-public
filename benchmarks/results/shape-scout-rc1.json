@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "workload": "synthetic completed pet run",
+  "tokenizer": "o200k_base",
+  "visual_jobs": 13,
+  "generation_attempts": 13,
+  "retries": 0,
+  "inputs": {
+    "skill_files": 5,
+    "prompt_files": 28,
+    "selected_job_prompts": 13
+  },
+  "baseline": {
+    "method": "core plan reloaded before every visual job; only the selected job prompt included",
+    "tokens": 109515,
+    "full_plan_replays": 13
+  },
+  "exhaustive_baseline": {
+    "method": "core plan and all prompt templates reloaded before every job",
+    "tokens": 245219,
+    "context_token_reduction_percent": 95.12
+  },
+  "plugin": {
+    "method": "stable context once, then compact action plus selected prompt",
+    "tokens": 11964,
+    "completed_stage_replans": 0,
+    "selected_prompt_tokens": 6295,
+    "max_controller_output_bytes": 872
+  },
+  "context_token_reduction_percent": 89.08,
+  "scope_note": "Deterministic local orchestration-context replay; not API billing, hidden reasoning, image-generation, cached-input, or output tokens."
+}

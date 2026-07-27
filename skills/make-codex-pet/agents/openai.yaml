@@ -1,0 +1,6 @@
+interface:
+  display_name: "Make Codex Pet"
+  short_description: "Create validated Codex pets from reference images"
+  default_prompt: "Use $make-codex-pet to create and install a Codex pet from my reference image."
+policy:
+  allow_implicit_invocation: true

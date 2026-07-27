@@ -1,0 +1,8 @@
+Codex Pet Maker
+Copyright 2026 haishanstudying
+
+This product includes adapted deterministic pet-processing code from the
+OpenAI hatch-pet skill, licensed under the Apache License, Version 2.0.
+
+Modifications add compact persistent orchestration, local privacy scanning,
+review-copy allowlisting, and balanced conditional QA.
