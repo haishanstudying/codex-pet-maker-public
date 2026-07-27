@@ -1,11 +1,13 @@
 # Codex Pet Maker
 
-> ## 一张图，生成你的 Codex 宠物
+> ## One image. Your own Codex pet.
 >
-> Drop in one reference image. Codex Pet Maker turns it into a validated,
-> install-ready animated Codex v2 pet.
+> Turn a single reference image into a validated, install-ready animated
+> Codex v2 pet.
 
-从角色生成、动作图集到方向检查与安装打包，一次流程完成；中断后还能从上次进度继续。
+Codex Pet Maker handles the repetitive work—resumable generation, targeted
+retries, atlas assembly, direction checks, and packaging—so you can focus on
+the character instead of managing the pipeline.
 
 > **Status:** public `v0.1.0-rc.1` release candidate.
 
